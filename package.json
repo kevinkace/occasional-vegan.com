@@ -7,11 +7,13 @@
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "dotenv": "^16.4.7",
-    "mysql2": "^3.14.1"
+    "mysql2": "^3.14.1",
+    "ssh2-sftp-client": "^12.1.1"
   },
   "scripts": {
     "db:up": "docker compose up -d --wait db",
     "db:sync": "node sync-live-db.js",
+    "uploads:sync": "node sync-live-uploads.js",
     "wp:create-admin": "node create-local-admin.js",
     "start": "docker compose up -d --wait",
     "dev": "npm run start",
