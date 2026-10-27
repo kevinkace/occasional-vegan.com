@@ -1,8 +1,9 @@
-const SftpClient = require('ssh2-sftp-client');
-const dotenv = require('dotenv');
 const { mkdir, readFile } = require('node:fs/promises');
-const path = require('node:path');
+const path                = require('node:path');
 const { createInterface } = require('node:readline/promises');
+
+const dotenv     = require('dotenv');
+const SftpClient = require('ssh2-sftp-client');
 
 const projectDirectory = __dirname;
 const localUploadsDirectory = path.join(
