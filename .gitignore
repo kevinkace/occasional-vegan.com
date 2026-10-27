@@ -5,3 +5,4 @@ env/
 wordpress/wp-content/uploads/
 wordpress/wp-content/upgrade/
 node_modules
+db/
