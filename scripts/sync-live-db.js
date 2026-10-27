@@ -1,8 +1,9 @@
-const mysql = require('mysql2');
-const dotenv = require('dotenv');
-const { readFile } = require('node:fs/promises');
-const path = require('node:path');
+const { readFile }        = require('node:fs/promises');
+const path                = require('node:path');
 const { createInterface } = require('node:readline/promises');
+
+const dotenv = require('dotenv');
+const mysql  = require('mysql2');
 
 const projectDirectory = __dirname;
 const batchSize = 250;

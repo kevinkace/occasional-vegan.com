@@ -1,11 +1,12 @@
-const mysql = require('mysql2');
-const dotenv = require('dotenv');
-const bcrypt = require('bcryptjs');
-const { createHmac } = require('node:crypto');
-const { readFile } = require('node:fs/promises');
-const path = require('node:path');
+const { createHmac }      = require('node:crypto');
+const { readFile }        = require('node:fs/promises');
+const path                = require('node:path');
 const { createInterface } = require('node:readline/promises');
-const { StringDecoder } = require('node:string_decoder');
+const { StringDecoder }   = require('node:string_decoder');
+
+const bcrypt = require('bcryptjs');
+const dotenv = require('dotenv');
+const mysql  = require('mysql2');
 
 const projectDirectory = __dirname;
 

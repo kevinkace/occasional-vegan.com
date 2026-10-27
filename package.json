@@ -12,9 +12,9 @@
   },
   "scripts": {
     "db:up": "docker compose up -d --wait db",
-    "db:sync": "node sync-live-db.js",
-    "uploads:sync": "node sync-live-uploads.js",
-    "wp:create-admin": "node create-local-admin.js",
+    "db:sync": "node scripts/sync-live-db.js",
+    "uploads:sync": "node scripts/sync-live-uploads.js",
+    "wp:create-admin": "node scripts/create-local-admin.js",
     "start": "docker compose up -d --wait",
     "dev": "npm run start",
     "stop": "docker compose down"
