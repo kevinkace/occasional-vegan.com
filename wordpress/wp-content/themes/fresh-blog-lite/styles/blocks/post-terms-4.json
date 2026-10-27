@@ -1,0 +1,31 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Highlight",
+	"slug": "post-terms-4",
+	"blockTypes": [ "core/post-terms", "core/term-name" ],
+	"styles": {
+		"css": "& { display: block; } & span:not([class], [data-rich-text-placeholder]) { display: inline-block; position: relative; padding: .2em .75em; border-radius: 8px; } & span:not([class], [data-rich-text-placeholder])::before { content: ''; inset: 0; border-radius: inherit; display: flex; height: 100%; left: 0; position: absolute; top: 0; width: 100%; background: linear-gradient(to right,var(--wp--preset--color--primary),hsla(0,0%,100%,0)); opacity: .2; } & span:not([class], [data-rich-text-placeholder])::after { content: ''; inset: 0; border-radius: inherit; display: flex; height: 100%; left: 0; position: absolute; top: 0; width: 100%; background: var(--wp--preset--color--primary); opacity: 0; }",
+		"elements": {
+			"link": {
+				"css": "& { display: inline-block; position: relative; } &::before { content: ''; inset: 0; border-radius: inherit; display: flex; height: 100%; left: 0; position: absolute; top: 0; width: 100%; background: linear-gradient(to right,var(--wp--preset--color--primary),hsla(0,0%,100%,0)); opacity: .2; } &::after { content: ''; inset: 0; border-radius: inherit; display: flex; height: 100%; left: 0; position: absolute; top: 0; width: 100%; background: var(--wp--preset--color--primary); opacity: 0; }",
+				"border": {
+					"radius": "8px",
+					"width": "0"
+				},
+				"spacing": {
+					"margin": {
+						"top": "2px",
+						"bottom": "2px"
+					},
+					"padding": {
+						"top": ".2em",
+						"right": ".75em",
+						"bottom": ".2em",
+						"left": ".75em"
+					}
+				}
+			}
+		}
+	}
+}
