@@ -43,3 +43,8 @@ Existing same-name local files are overwritten; local-only files are kept.
 
 - To stop the stack and preserve its database, run `npm run stop`.
 - Uses "Food Blog FSE" theme, and requires parent theme "Fresh Blog Lite".
+
+
+## Backups
+
+Uploads and MySql in Google Drive.
